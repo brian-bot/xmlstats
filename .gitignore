@@ -1,0 +1,7 @@
+.Rbuildignore
+.Rproj.user
+.Rhistory
+.RData
+xmlstatsApi.Rproj
+.xmlstatsConfig
+trySomeStuff.R

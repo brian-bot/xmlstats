@@ -1,0 +1,10 @@
+Package: xmlstatsApi
+Type: Package
+Title: xmlstats API
+Version: 0.1
+Date: 2014-03-15
+Author: Brian M. Bot
+Maintainer: Brian M. Bot <bot.brian@gmail.com>
+Imports: methods,utils,RCurl,RJSONIO
+Description: Allowing access to the xmlstats APIs within R
+License: GPL
