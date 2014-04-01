@@ -6,8 +6,9 @@ importFrom(utils, browseURL)
 ## EXPORT S3 FUNCTIONS
 export(
 xmlstatsRestGET,
-setToken
-)
+getMlbEvent,
+getMlbDate,
+setToken)
 
 ## EXPORT METHODS
 #exportMethods(
