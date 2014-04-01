@@ -3,13 +3,9 @@
 
 .getXmlstatsJSON <- function(url, .opts, httpheader, ...){
   
-  tryGetURL <- getURL(url, .opts=.opts,
+  tryGetURL <- getURL(url, .opts=.opts, .encoding='UTF-8',
                       httpheader=httpheader, ...)
   tryGetURL <- fromJSON(tryGetURL)
-#   if(is.character(tryGetURL)){
-#     if(tryGetURL["message"] == "Not Found")
-#       stop("espn api could not find specified URI", call.=F)
-#   }
   
   return(tryGetURL)
 }
