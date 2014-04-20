@@ -14,3 +14,23 @@ install_github("brian-bot/xmlstats")
 setToken("myTokenString1234")
 ```
 
+This can be set as a hook in your (private) .Rprofile
+```r
+setHook(
+  packageEvent("xmlstats", "attach"),
+  function(...){
+    setToken("myTokenString1234")
+  }
+)
+```
+
+#### Get all MLB stats for a given date
+```r
+theseEvents <- getMlbDate(as.Date("2014-03-22"))
+```
+
+#### REST level interface with the API
+To make any call to the API:
+```r
+mlbTeams <- xmlstatsRestGET('/mlb/teams.json')
+```
