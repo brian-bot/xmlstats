@@ -19,6 +19,6 @@ kCertBundle <- "certificateBundle/cacert.pem"
 }
 
 .userAgent <- function(){
-  return(paste("xmlstatsApi/", utils::packageDescription("xmlstatsApi", fields="Version"), sep=""))
-#   return(paste("xmlstatsApi/", utils::packageDescription("xmlstatsApi", fields="Version"), "(bot.brian@gmail.com)", sep=""))
+  return(paste("xmlstats/", utils::packageDescription("xmlstatsApi", fields="Version"), sep=""))
+#   return(paste("xmlstatsApi/", utils::packageDescription("xmlstatsApi", fields="Version"), "(http://www.github.com/brian-bot/xmlstats)", sep=""))
 }
