@@ -20,9 +20,11 @@ getMlbDate <- function(d){
     
     ## GRAB THE BOXSCORE IF GAME IS COMPLETED
     if( event$event_status == "completed" ){
-      ## POOR MANS CHECK TO ENSURE API RATE LIMIT NOT EXCEDED
-      system("sleep 10")
-      allData[[i]] <- getMlbEvent(event$event_id)
+      if( event$season_type == "regular" ){
+        ## POOR MANS CHECK TO ENSURE API RATE LIMIT NOT EXCEDED
+        system("sleep 10")
+        allData[[i]] <- getMlbEvent(event$event_id)
+      }
     } else{
       ## IF THE GAME IS NOT COMPLETED - JUST PRINT A MESSAGE
       cat("Event", event$event_id, "was not complete:", event$event_status, "\n")
