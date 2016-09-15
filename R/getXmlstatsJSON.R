@@ -3,7 +3,7 @@
 
 .getXmlstatsJSON <- function(url, .opts, httpheader, ...){
   
-  tryGetURL <- getURL(url, .opts=.opts, .encoding='UTF-8',
+  tryGetURL <- getURL(url, .opts=.opts, .encoding='UTF-8', encoding='gzip',
                       httpheader=httpheader, ...)
   tryGetURL <- fromJSON(tryGetURL)
   

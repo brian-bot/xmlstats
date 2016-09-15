@@ -10,6 +10,7 @@ kCertBundle <- "certificateBundle/cacert.pem"
   .setXmlstatsCache("xmlstatsEndpoint", "https://erikberg.com/")
   .setXmlstatsCache("httpheader", character())
   .setXmlstatsCache("User-Agent", .userAgent())
+  .setXmlstatsCache("Accept-Encoding", "gzip")
   .setXmlstatsCache("low.speed.time", 60)
   .setXmlstatsCache("low.speed.limit", 1)
   .setXmlstatsCache("connecttimeout", 300)
