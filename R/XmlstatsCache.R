@@ -16,7 +16,7 @@
   }
   
   ## IF ONE OF THESE PARAMS THEN ADD TO httpheader
-  validHeaders <- c("Authorization", "User-Agent", "Accept")
+  validHeaders <- c("Authorization", "User-Agent", "Accept", "Accept-Encoding")
   if(key %in% validHeaders){
     httpheader <- .getXmlstatsCache("httpheader")
     httpheader[[key]] <- value
